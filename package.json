@@ -1,0 +1,38 @@
+{
+  "name": "clinch.js6",
+  "version": "0.14.3",
+  "description": "ES2015 js processor for Clinch",
+  "main": "./lib/addon",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meettya/clinch.js6.git"
+  },
+  "keywords": [
+    "clinch",
+    "js6",
+    "ES2015"
+  ],
+  "author": "Dmitrii Karpich <meettya@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "6.x",
+    "babel-preset-es2015":"6.x",
+    "whet.extend":"*"
+  },
+  "devDependencies": {
+    "async": "*",
+    "chai": "*",
+    "coffee-script": "*",
+    "colors": "*",
+    "fs-extra": "*",
+    "lodash": "*",
+    "mocha": "*",
+    "walkdir": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
