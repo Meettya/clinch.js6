@@ -25,7 +25,7 @@ For more information see main module documentation.
 
 Use options `extension` to set up custom file extension.
 
-Important - extension MUST start with dot ('.'), f.e. `.js6`, not 'js6'.
+Important - extension MUST start with dot (`.`), f.e. `.js6`, not `js6`.
 
 ## About ES2015
 
