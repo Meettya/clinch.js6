@@ -24,7 +24,13 @@ processor = (data, filename, cb) ->
   cb null, result.code, yes
 
 builder = (raw_options) ->
-  extension : raw_options.extension ? extension
+  # babel unhappy with unknown options, wipe it 
+  currnet_extention = extension
+  if raw_options.extension?
+    currnet_extention = raw_options.extension
+    delete raw_options.extension
+
+  extension : currnet_extention
   processor : (data, filename, cb) ->
     options = extend {}, raw_options, get_options filename
     try
