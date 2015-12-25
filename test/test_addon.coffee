@@ -48,8 +48,11 @@ describe 'Addon:', ->
 
   describe 'as addon', ->
 
-    it 'should export correct file extension ".js"', ->
+    it 'should export correct default file extension ".js"', ->
       expect(Compiller.extension).to.equal '.js'
+
+    it 'should support custom file extension, f.e. ".js6"', ->
+      expect(Compiller(extension:'.js6').extension).to.equal '.js6'
 
     it 'should compile correct ES2015 .js file', (done) ->
       fs.readFile fixturesOk, READ_OPTIONS, (err, data) ->
