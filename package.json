@@ -1,6 +1,6 @@
 {
   "name": "clinch.js6",
-  "version": "0.14.3",
+  "version": "0.1.1",
   "description": "ES2015 js processor for Clinch",
   "main": "./lib/addon",
   "scripts": {
