@@ -24,7 +24,7 @@ processor = (data, filename, cb) ->
   cb null, result.code, yes
 
 builder = (raw_options) ->
-  extension : extension
+  extension : raw_options.extension ? extension
   processor : (data, filename, cb) ->
     options = extend {}, raw_options, get_options filename
     try
